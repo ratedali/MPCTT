@@ -1,0 +1,16 @@
+{
+  "image": "docker.io/coqorg/coq:latest",
+  "postCreateCommand": "bash -i -c 'opam install coq-lsp'",
+  "features": {
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "ejgallego.coq-lsp"
+      ]
+    }
+  }
+}
